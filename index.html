@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Clock</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">World Clock</a>
+</nav>
+
+<!-- Country Selection Bar -->
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <select class="form-control" id="countrySelect">
+        <option value="America/New_York">United States</option>
+        <option value="Europe/London">United Kingdom</option>
+        <option value="Europe/Paris">France</option>
+        <option value="Europe/Berlin">Germany</option>
+        <option value="Asia/Tokyo">Japan</option>
+        <option value="Asia/Kolkata">India</option>
+        <option value="Asia/Karachi">Pakistan</option>
+        <option value="Asia/Shanghai">China</option>
+        <option value="Europe/Moscow">Russia</option>
+        <option value="Asia/Dubai">United Arab Emirates</option>
+        <option value="America/Toronto">Canada</option>
+        <option value="Australia/Sydney">Australia</option>
+        <option value="Africa/Johannesburg">South Africa</option>
+        <option value="Asia/Kabul">Afghanistan</option>
+        <option value="Europe/Rome">Italy</option>
+        <option value="Europe/Berlin">Germany</option>
+        <option value="Asia/Tehran">Iran</option>
+        <option value="America/Mexico_City">Mexico</option>
+        <option value="Europe/Madrid">Spain</option>
+        <option value="Europe/Stockholm">Sweden</option>
+        <option value="Asia/Istanbul">Turkey</option>
+        <!-- Add more countries here -->
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- Carousel/Slider -->
+<div id="carouselExampleControls" class="carousel slide mt-4" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/800x400/?usa')">
+      <div class="dark-overlay"></div>
+      <div class="carousel-item-content">
+        <div class="clock" id="clock-0"></div>
+        <span id="countryName">United States</span>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('https://source.unsplash.com/800x400/?uk')">
+      <div class="dark-overlay"></div>
+      <div class="carousel-item-content">
+        <div class="clock" id="clock-1"></div>
+        <span id="countryName">United Kingdom</span>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('https://source.unsplash.com/800x400/?france')">
+      <div class="dark-overlay"></div>
+      <div class="carousel-item-content">
+        <div class="clock" id="clock-2"></div>
+        <span id="countryName">France</span>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('https://source.unsplash.com/800x400/?germany')">
+      <div class="dark-overlay"></div>
+      <div class="carousel-item-content">
+        <div class="clock" id="clock-3"></div>
+        <span id="countryName">Germany</span>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('https://source.unsplash.com/800x400/?japan')">
+      <div class="dark-overlay"></div>
+      <div class="carousel-item-content">
+        <div class="clock" id="clock-4"></div>
+        <span id="countryName">Japan</span>
+      </div>
+    </div>
+    <!-- Add more carousel items for other countries -->
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2024 World Clock</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS, jQuery, and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script src="script.js"></script>
+</body>
+</html>
